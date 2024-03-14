@@ -1,0 +1,791 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+ html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+  box-sizing: content-box; /* 1 */
+  height: 0; /* 1 */
+  overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+  border-bottom: none; /* 1 */
+  text-decoration: underline; /* 2 */
+  text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace; /* 1 */
+  font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+  box-sizing: border-box; /* 1 */
+  color: inherit; /* 2 */
+  display: table; /* 1 */
+  max-width: 100%; /* 1 */
+  padding: 0; /* 3 */
+  white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+  vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button; /* 1 */
+  font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+  display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+  display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+  display: none;
+}
+
+/* Variables globales */
+:root {
+        --color-primary: #d73953; /* Couleur primaire */
+        --color-black: #090909; /* Couleur noire */
+        --color-white: #ffffff; /* Couleur blanche */
+        --color-light-grey: #f3f3f3; /* Couleur grise claire */
+        --color-dark-grey: #353535; /* Couleur grise foncée */
+        --text-color: var(--color-black); /* Couleur du texte */
+        --font-family-base: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif; /* Police de caractères de base */
+        --font-family-title: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Police de caractères pour les titres */
+        --font-size-small: 1.2rem; /* Taille de police petite */
+        --font-size-medium: 1.6rem; /* Taille de police moyenne */
+        --font-size-large: 1.8rem; /* Taille de police grande */
+        --font-size-x-large: 2.3rem; /* Taille de police très grande */
+        --font-size-xx-large: 4.8rem; /* Taille de police extrêmement grande */
+        --font-weight-regular: 400; /* Poids de la police régulier */
+        --font-weight-bold: 700; /* Poids de la police en gras */
+        --line-height-small: 1.2; /* Hauteur de ligne petite */
+        --line-height-base: 1.5; /* Hauteur de ligne moyenne */
+        --line-height-big: 1.8; /* Hauteur de ligne grande */
+        --section-header-align: center; /* Alignement horizontal de l'en-tête de section */
+        --section-tagline-transform: uppercase; /* Transforme les lignes du texte en majuscule */
+        --section-title-margin: 0; /* Definir la taille des marges sur les 4 côtes */
+        --section-title-color: var(--color-white); /* couleur noir pour les titres sections */
+        --section-padding: 5rem 0; /* Définition de la marge des sections */
+        --section-header-padding: 0 0 3rem; /* Définition de la marge du header des sections */
+        --section-body-padding: 0 0 3rem; /* Définition de la marge du corps des sections */
+        --section-footer-padding: 3rem 0 0; /* Définition de la marge du footer des sections */
+        --section-footer-align: center; /* Définition de l'alignement horizontal du footer des sections */
+        --footer-padding: 5rem 0 1rem; /* Définition de la marge du footer */
+        --nav-item-font-family: var(--font-family-title); /* Police de caractères */
+        --nav-item-font-weight: var(--font-weight-bold); /* Poids de la police */
+        --nav-item-font-size: var(--font-size-medium); /* Taille de police */
+        --nav-item-letter-spacing: 4%; /* Espacement entre les caractères */
+        --nav-item-display: inline-block; /* Affichage en ligne */
+        --nav-item-margin: 0 0 calc(var(--font-size-medium) * 3) 0; /* Marge */
+        --nav-item-link-hover: var(--color-primary); /* Couleur au survol */
+        --section-tagline-margin: 0;
+        --button-display: inline-block; /* Affichage en ligne */
+        --button-padding: 1.5rem 3rem; /* Rembourrage */
+        --button-border: 0.2rem solid var(--color-primary); /* Bordure */
+        --button-color: var(--color-black); /* Couleur du texte */
+        --button-text-decoration: none; /* Décoration du texte */
+        --button-font-size: var(--font-size-large); /* Taille de police */
+        --button-hover-color: var(--color-white); /* Couleur du texte au survol */
+        --button-hover-text-decoration: none; /* Décoration du texte au survol */
+        --button-hover-background: var(--color-primary); /* Couleur de fond au survol */
+        --header-padding: 4rem 0 0; /* Rembourrage de l'en-tête */
+        --header-logo-position: relative; /* Rembourrage de l'en-tête */
+        --header-logo-link-display: inline-block; /* Affichage du lien du logo de l'en-tête */
+        --header-logo-link-position: absolute; /* Position du lien du logo de l'en-tête */
+        --header-logo-link-top: -1rem; /* Position verticale du lien du logo de l'en-tête */
+        --header-logo-link-left: 0; /* Position horizontale du lien du logo de l'en-tête */
+    }
+
+    /* La règle s'applique à tous les éléments, ainsi qu'à leurs pseudo-éléments ::before et ::after */
+    *, *:before, *:after {
+      /* La boîte du modèle de la zone de contenu comprend à la fois le contenu et le remplissage, mais exclut la bordure et la marge */
+      box-sizing: border-box;
+    }
+
+    
+    /* Styles pour l'élément HTML */
+    html {
+        scroll-behavior: smooth; /* Comportement de défilement fluide */
+        font-size: 62.5%; /* Taille de police de base */
+    }
+    
+    /* Styles pour le corps du document */
+    body {
+        color: var(--text-color); /* Couleur du texte */
+        font-family: var(--font-family-base); /* Police de caractères */
+        font-size: var(--font-size-medium); /* Taille de police */
+        font-weight: var(--font-weight-regular); /* Poids de la police */
+        line-height: var(--line-height-base); /* Hauteur de ligne */
+    }
+    
+    /* Styles pour les liens */
+    a:link {
+        color: #161616; /* Couleur des liens */
+        text-decoration: none; /* Pas de soulignement */
+    }
+    /* Cible l'état visité du lien */
+    a:visited {
+        font-style: italic; /* Italique pour le texte */
+    }
+    /* Cible l'état de survol du line */
+    a:hover {
+        text-decoration: underline; /* Soulignement pour le survol */
+    }
+    /* Cible l'etat actif pour le line */
+    a:active {
+        background-color: var(--color-light-grey); /* Couleur de fond pour l'état actif */
+    }
+    
+    
+    /* Styles pour les titres */
+    h1, h2, h3, h4, h5, h6 {
+        font-family: var(--font-family-title); /* Police de caractères */
+        font-weight: var(--font-weight-bold); /* Poids de la police */
+    }
+
+    /* Ciblage de la classe navbar-menu, laissez-la flotter à droite */
+    .navbar-menu {
+      float: right;
+    }
+
+    /* Styles pour la classe nav */
+    nav {
+      margin: 0; /* Aucune marge */
+      padding: 0; /* Aucun rembourrage */
+      text-align: center; /* Alignement centralisé du texte */
+    }
+
+    /* Définit la couleur du lien lorsqu'il est survolé en utilisant la variable color-white */
+    .nav-item-link-hover {
+      color: var(--color-white);
+    }
+
+    /* Cible les pseudo-éléments ::before des éléments .nav-link à l'intérieur d'un élément nav */
+    .nav .nav-link::before {
+      content: ""; /* Contenu vide pour les pseudo-éléments */
+      position: absolute; /* Position absolue */
+      top: 0; /* Position verticale en haut */
+      left: 0; /* Position horizontale à gauche */
+      background-color: var(--color-white); /* Couleur de fond définie par la variable color-white */
+      width: 0; /* Largeur initiale nulle */
+      height: 20%; /* Hauteur égale à 20% de la hauteur de l'élément parent */
+    }
+
+    /* Cible les pseudo-éléments ::before des éléments .nav-link lorsqu'un élément .nav-item est survolé et est à l'intérieur d'un élément nav */
+    .nav .nav-item:hover .nav-link::before {
+      background-color: var(--color-primary); /* Couleur de fond définie par la variable color-primary */
+      width: 100%; /* Largeur de 100% */
+    }
+
+    /* Styles pour la classe nav-link dans la classe nav */
+    nav .nav-link {
+      display: block; /* Affichage en bloc */
+      padding: calc(var(--font-size-medium) / 2) var(--font-size-medium); /* Rembourrage */
+    }
+
+    /* Effet au survol pour la classe nav-link dans la classe nav */
+    nav .nav-link:hover {
+      color: var(--nav-item-link-hover); /* Couleur au survol */
+    }
+    
+    /* Styles pour les éléments cachés visuellement */
+    .visually-hidden {
+        display: none; /* Masquer l'élément */
+    }
+    
+    /* Styles pour les catégories de cartes */
+    .card-category {
+        color: var(--color-primary); /* Couleur de la catégorie de carte */
+    }
+
+    /* Cibler card-title à l'intérieur de card-services */
+    .card-services .card-title {
+      margin: 0; /* Aucune marge sur tous les côtés */
+    }
+
+    /* Cibler les liens <a> à l'intérieur de card-services */
+    .card-services a {
+      display: block; /* Afficher comme élément de bloc */
+      padding: calc(var(--section-padding) * 2); /* Définir le rembourrage à 2 fois la valeur de la variable section-padding */
+      background-color: var(--color-light-grey); /* Définir la couleur de fond à la valeur de la variable color-light-grey */
+    }
+
+    /* Cibler l'état de survol des liens <a> à l'intérieur de card-services */
+    .card-services a:hover {
+      color: var(--color-white); /* Définir la couleur du texte à la valeur de la variable color-white */
+      background-color: var(--color-primary); /* Définir la couleur de fond à la valeur de la variable color-primary */
+      text-decoration: none; /* Supprimer la décoration de texte */
+    }
+
+    /* Styles pour le slogan de section */
+    .section-tagline {
+        color: var(--color-primary); /* Couleur du slogan de section */
+        font-family: var(--font-family-title);
+    }
+    /* Section padding */
+    .section {
+      padding: var(--section-padding); /* Applique la marge définie pour les sections */
+    }
+
+    /* Section header padding */
+    .section-header {
+      padding: var(--section-header-padding); /* Applique la marge définie pour les headers des sections */
+    }
+
+    /* Section body padding */
+    .section-body {
+      padding: var(--section-body-padding); /* Applique la marge définie pour les corps des sections */
+    }
+
+    /* Section footer padding and alignment */
+    .section-footer {
+      padding: var(--section-footer-padding); /* Applique la marge définie pour les footers des sections */
+      text-align: var(--section-footer-align); /* Alignement horizontal du texte dans le footer */
+    }
+
+    /* Footer padding */
+    .footer {
+      padding: var(--footer-padding); /* Applique la marge définie pour le footer */
+    }
+        
+    .container {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Style pour les titres des sections */
+    .section-title {
+        font-family: var(--font-family-title); /* Police de caractères pour les titres */
+        font-size: var(--font-size-xx-large); /* Taille de police */
+        font-weight: var(--font-weight-bold); /* Poids de la police */
+        margin: var(--section-title-margin); /* Definir la taille des marges sur les 4 côtes */
+        color: var(--section-title-color); /* couleur noir pour les titres sections */
+    }
+
+    /* Ajout de marge basée sur la variable personnalisée --section-tagline-margin */
+    .section-a-tagline {
+        margin: var(--section-tagline-margin);
+    }
+
+    /* Réinitialisation des marges, des rembourrages et des puces pour les listes */
+    ul.row {
+      margin: 0; /* Réinitialisation de la marge */
+      padding: 0; /* Réinitialisation du rembourrage */
+      list-style: none; /* Suppression des puces */
+    }
+
+    /* Ajout de marge basée sur la variable personnalisée --section-tagline-margin */
+    .section-a-tagline {
+      margin: var(--section-tagline-margin);
+    }
+
+    /* Réinitialisation des marges, des rembourrages et des puces pour les listes */
+    ul.row {
+      margin: 0; /* Réinitialisation de la marge */
+      padding: 0; /* Réinitialisation du rembourrage */
+      list-style: none; /* Suppression des puces */
+    }
+    
+    /* Sélecteur simplifié pour toutes les classes commençant par col- */
+    [class^="col-"] {
+        float: left; /* Les faire flotter vers la gauche */
+        padding: 0.5rem; /* Définir le rembourrage à la moitié de la taille de l'élément racine */
+      }
+
+      .row::after {
+        /* Insertion de contenu vide après chaque élément .row */
+        content: "";
+    
+        /* Définition du comportement du pseudo-élément comme une table */
+        display: table;
+    
+        /* Empêcher les éléments flottants de se trouver à gauche ou à droite du pseudo-élément */
+        clear: both;
+     }
+  
+    /* Style pour le copyright dans le pied de page */
+      .footer-copyright {
+        margin: 0; /* Supprime la marge */
+        font-size: var(--font-size-small); /* Taille de police définie par une variable */
+        color: var(--text-color); /* Couleur du texte définie par une variable */
+      }
+
+    /* Style pour la liste dans le pied de page */
+      .footer ul {
+        text-align: right; /* Alignement du texte à droite */
+      }
+
+      /* Styles spécifiques pour data-section-theme="dark" */
+      [data-section-theme="dark"] {
+        --text-color: var(--color-white); /* Redéfinition de la propriété personnalisée text-color à la couleur blanche */
+        --section-title-color: var(--color-white); /* Redéfinition de la propriété personnalisée section-title-color à la couleur blanche */
+        background-color: var(--color-black); /* Définition de l'arrière-plan à la couleur noire */
+      }
+
+      /* Style pour la classe footer-address */
+      .footer-address {
+        color: var(--text-color); /* Définir la couleur du texte avec la variable text-color */
+      }
+
+      /* Style pour la classe social-link */
+      .social-link {
+        display: block; /* Rendre l'élément comme un bloc */
+      }
+
+      /* Style pour les éléments svg enfants de la classe social-link */
+      .social-link svg {
+        fill: var(--text-color); /* Fill remplit la couleur des éléments svg avec la variable text-color */
+      }
+
+      /* Styles pour les liens actifs */
+      a:active {
+        background-color: var(--color-light-grey); /* Couleur de fond pour l'état actif */
+      }
+
+      /* Styles pour les boutons */
+      .button {
+        display: var(--button-display); /* Affichage en ligne */
+        padding: var(--button-padding); /* Rembourrage */
+        border: var(--button-border); /* Bordure */
+        font-size: var(--button-font-size); /* Taille de police */
+        color: var(--button-color); /* Couleur du texte */
+        text-decoration: var(--button-text-decoration); /* Décoration du texte */
+      }
+
+      /* Styles pour les boutons au survol */
+      .button:hover {
+        color: var(--button-hover-color); /* Couleur du texte au survol */
+        text-decoration: var(--button-hover-text-decoration); /* Décoration du texte au survol */
+        background-color: var(--button-hover-background); /* Couleur de fond au survol */
+      }
+
+      /* Dans le thème sombre, définir une couleur de texte pour les boutons */
+      [data-section-theme="dark"] {
+        --button-color: var(--color-white); /* Couleur du texte pour le thème sombre */
+      }
+
+        /* Ajouter le sélecteur card-testimonial */
+      .card-testimonial {
+        /* Centrer le texte */
+        text-align: center;
+      }
+
+      /* Cibler card-avatar à l'intérieur de card-testimonial */
+      .card-testimonial .card-avatar {
+        /* Arrondir le rayon sur tous les côtés à 50% */
+        border-radius: 50%;
+        /* Définir la largeur sur 10x l'élément racine */
+        width: 10em;
+        /* Définir la hauteur sur 10x l'élément racine */
+        height: 10em;
+      }
+
+      /* Cibler la balise HTML <cite> qui est à l'intérieur de card-quote à l'intérieur de card-testimonial */
+      .card-testimonial .card-quote cite {
+        /* Style en tant qu'élément de niveau bloc */
+        display: block;
+        /* Rembourrer le haut avec 1x l'élément racine */
+        padding-top: 1em;
+        /* Définir la valeur de couleur du premier plan sur la valeur de la variable color-primary */
+        color: var(--color-primary);
+      }
+
+      /* Cible card-outer à l'intérieur de card-work */
+      .card-work .card-outer {
+        position: relative; /* Position relative pour positionner l'élément */
+        overflow: hidden; /* Cache tout dépassement */
+      }
+
+      /* Cible l'image à l'intérieur de card-image dans card-work */
+      .card-work .card-image img {
+        height: 30rem; /* Hauteur fixe */
+        width: 100%; /* Largeur à 100% */
+        object-fit: cover; /* Ajuste l'image pour couvrir la boîte de manière proportionnelle */
+        vertical-align: bottom; /* Alignement vertical en bas */
+      }
+
+      /* Cible card-inner à l'intérieur de card-work */
+      .card-work .card-inner {
+        position: absolute; /* Position absolue */
+        top: -0.1rem; /* Positionnement vers le haut */
+        left: -0.1rem; /* Positionnement vers la gauche */
+        right: -0.1rem; /* Positionnement vers la droite */
+        z-index: 1; /* Index de position pour les éléments superposés */
+      }
+
+      /* Cible card-inner lorsque card-work est survolé */
+      .card-work:hover .card-inner {
+        background: rgba(0, 0, 0, 0.7); /* Fond semi-transparent noir lors du survol */
+      }
+
+      /* Cible card-title à l'intérieur de card-work */
+      .card-work .card-title {
+        text-align: center; /* Alignement du texte au centre */
+        margin: 0; /* Aucune marge */
+        opacity: 0; /* Opacité initiale la plus basse */
+        height: 100%; /* Hauteur à 100% */
+        position: relative; /* Position relative pour positionner l'élément */
+      }
+
+      /* Cible le lien à l'intérieur de card-title et card-work */
+      .card-work .card-title a {
+        display: block; /* Affichage en bloc */
+        text-decoration: none; /* Pas de soulignement */
+        padding-top: 45%; /* Rembourrage en haut égal à 45% */
+      }
+
+      /* Crée les pseudo-éléments ::after du lien (à l'intérieur de card-title et card-work) */
+      .card-work .card-title a::after {
+        position: absolute; /* Position absolue */
+        top: 0; /* Position en haut */
+        right: 0; /* Position à droite */
+        left: 0; /* Position à gauche */
+        bottom: 0; /* Position en bas */
+        content: ""; /* Contenu vide */
+      }
+
+      /* Cible card-title lorsque card-work est survolé */
+      .card-work:hover .card-title {
+        opacity: 1; /* Opacité maximale lors du survol */
+      }
+
+       /* Ajouter le sélecteur section-hero */
+      .section-hero {
+        background-size: 90rem auto; /* Largeur de 90rem et hauteur automatique */
+      }
+
+      /* Cibler section-title à l'intérieur de section-hero */
+      .section-hero .section-title {
+        margin-bottom: 5rem; /* Ajouter une marge de 5rem en bas */
+      }
+
+      /* Cibler section-inner à l'intérieur de section-hero */
+      .section-hero .section-inner {
+        padding: 10rem 40rem 2rem 0; /* un rembourrage de 10rem en haut, 40rem à droite, 2rem en bas et 0 */
+      }
+
+        /* La classe "header" représente l'en-tête de la page */
+      header {
+        padding: var(--header-logo-position); /* Ajoute un rembourrage (padding) selon la variable "--header-logo-position" */
+      }
+
+      /* La classe "header-logo" représente le logo dans l'en-tête */
+      .header-logo {
+        position: var(--header-logo-position); /* Définit la position du logo */
+      }
+
+      /* La classe "header-logo:link" représente le lien associé au logo dans l'en-tête */
+      .header-logo:link {
+        display: var(--header-logo-link-display); /* Définit l'affichage du lien du logo */
+        position: var(--header-logo-link-position); /* Définit la position du lien du logo */
+        vertical-align: var(--header-logo-link-top); /* Alignement vertical du lien du logo */
+        position: var(--header-logo-link-left); /* Définit la position du lien du logo */
+      }
