@@ -1,0 +1,12 @@
+@mixin margin-size($value) {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  body {
+    @include margin-size(10px);
+  }
+
+  div {
+    @include margin-size(15px);
+  }
