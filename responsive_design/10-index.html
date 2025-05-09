@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -7,9 +8,9 @@
     <meta name="description" content="Description of the page less than 150 characters">
     <link rel="icon" type="image/png" href="images/favicon.jpg">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Raleway:700&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='01-styles.css'>
+    <link rel='stylesheet' href='10-styles.css'>
   </head>
-  <body>
+  <body class="article-page">
     <!– Header –>
     <header class="header" data-section-theme="dark">
       <div class="container">
@@ -19,6 +20,13 @@
             <img src="images/logo-white.png" alt="Techium logo" width="160" height="40">
           </a>
         </div>
+        <input
+          type="checkbox"
+          id="menu-btn"
+          class="menu-btn">
+        <label for="menu-btn" class="menu-icon">
+          <span class="navicon"></span>
+        </label>
         <nav class="navbar-menu">
           <ul class="nav">
             <li class="nav-item">
@@ -42,7 +50,7 @@
             <li class="nav-item">
               <a href="#contact" class="nav-link">Contact</a>
             </li>
-                <li class="nav-item">
+                        <li class="nav-item">
                 <form action="#" method="post" class="form-search">
                   <input type="search" name="q" id="search-input" placeholder="Search..." aria-label="Search through site content">
                   <button class="search-button">
@@ -58,7 +66,7 @@
           </ul>
         </nav>
       </div>
-    </div>
+            </div>
     </header>
     <!– Main –>
     <main>
@@ -177,7 +185,15 @@
           <div class="section-body">
             <div class="row">
               <div class="col-1-2">
-                <img src="images/pic-about-01.jpg" alt="" width="460" height="460">
+                <img
+                  sizes="(max-width: 3000px) 40vw, 1200px"
+                  srcset="
+                    images/pic-about-01_bhqnud_c_scale,w_380.jpg 380w,
+                    images/pic-about-01_bhqnud_c_scale,w_856.jpg 856w,
+                    images/pic-about-01_bhqnud_c_scale,w_1200.jpg 1200w"
+                  src="images/pic-about-01_bhqnud_c_scale,w_1200.jpg"
+                  alt="">
+                <!-- <img src="images/pic-about-01.jpg" alt="" width="460" height="460"> -->
               </div>
               <div class="col-1-2">
                 <h3>Who are we</h3>
@@ -205,7 +221,14 @@
               <li class="col-1-3">
                 <article class="card-blog">
                   <div>
-                    <img src="images/pic-article-01.jpg" alt="" width="305" height="305">
+                    <img
+                      sizes="(max-width: 2250px) 40vw, 900px"
+                      srcset="
+                        images/pic-article-01_h8fyia_c_scale,w_380.jpg 380w,
+                        images/pic-article-01_h8fyia_c_scale,w_900.jpg 900w"
+                      src="images/pic-article-01_h8fyia_c_scale,w_900.jpg"
+                      alt="">
+                    <!-- <img src="images/pic-article-01.jpg" alt="" width="305" height="305"> -->
                   </div>
                   <p class="card-category">Career</p>
                   <h3><a href="#">Hoc loco tenere se Triarius non potuit.</a></h3>
@@ -216,7 +239,15 @@
               <li class="col-1-3">
                 <article class="card-blog">
                   <div>
-                    <img src="images/pic-article-02.jpg" alt="" width="305" height="305">
+                    <img
+                      sizes="(max-width: 2250px) 40vw, 900px"
+                      srcset="
+                        images/pic-article-02_jxbdsh_c_scale,w_380.jpg 380w,
+                        images/pic-article-02_jxbdsh_c_scale,w_885.jpg 885w,
+                        images/pic-article-02_jxbdsh_c_scale,w_900.jpg 900w"
+                      src="images/pic-article-02_jxbdsh_c_scale,w_900.jpg"
+                      alt="">
+                    <!-- <img src="images/pic-article-02.jpg" alt="" width="305" height="305"> -->
                   </div>
                   <p class="card-category">Digital Life</p>
                   <h3><a href="#">Ut alios omittam, hunc appello, quem ille unum secutus est.</a></h3>
@@ -227,7 +258,15 @@
               <li class="col-1-3">
                 <article class="card-blog">
                   <div>
-                    <img src="images/pic-article-03.jpg" alt="" width="305" height="305">
+                    <img
+                      sizes="(max-width: 2250px) 40vw, 900px"
+                      srcset="
+                        images/pic-article-03_k7zcon_c_scale,w_380.jpg 380w,
+                        images/pic-article-03_k7zcon_c_scale,w_810.jpg 810w,
+                        images/pic-article-03_k7zcon_c_scale,w_900.jpg 900w"
+                      src="images/pic-article-03_k7zcon_c_scale,w_900.jpg"
+                      alt="">
+                    <!-- <img src="images/pic-article-03.jpg" alt="" width="305" height="305"> -->
                   </div>
                   <p class="card-category">Social</p>
                   <h3><a href="#">Bestiarum vero nullum iudicium puto.</a></h3>
