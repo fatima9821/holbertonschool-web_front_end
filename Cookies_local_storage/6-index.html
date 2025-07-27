@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 6 - Session Storage</title>
+</head>
+<body>
+  <script>
+    const availableItems = ["Shampoo", "Soap", "Sponge", "Water"];
+
+    function checkStorage() {
+      if (typeof(Storage) === 'undefined') {
+        alert("Sorry, your browser does not support Web storage. Try again with a better one");
+      } else {
+        createStore();
+        displayCart();
+      }
+    }
+
+    function addItemToCart(item) {
+      sessionStorage.setItem(item, "true");
+    }
+
+    function createStore() {
+      const ul = document.createElement("ul");
+      availableItems.forEach(item => {
+        const li = document.createElement("li");
+        li.innerText = item;
+        li.onclick = function () {
+          addItemToCart(item);
+          displayCart();
+        };
+        ul.appendChild(li);
+      });
+      document.body.appendChild(ul);
+    }
+
+    function displayCart() {
+      const count = sessionStorage.length;
+      if (count > 0) {
+        const p = document.createElement("p");
+        p.innerText = `You previously had ${count} items in your cart`;
+        document.body.appendChild(p);
+      }
+    }
+
+    window.onload = checkStorage;
+  </script>
+</body>
+</html>
