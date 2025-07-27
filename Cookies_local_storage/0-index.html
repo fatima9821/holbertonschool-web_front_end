@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 0 - Basic Cookies</title>
+</head>
+<body>
+  <h2>Login</h2>
+  <input type="text" id="firstname" placeholder="Firstname">
+  <input type="text" id="email" placeholder="Email">
+  <button onclick="setCookies()">Log me in</button>
+  <button onclick="showCookies()">Show the cookies</button>
+
+  <script>
+    function setCookies() {
+      const firstname = document.getElementById('firstname').value;
+      const email = document.getElementById('email').value;
+      document.cookie = `firstname=${firstname}`;
+      document.cookie = `email=${email}`;
+    }
+
+    function showCookies() {
+      const p = document.createElement('p');
+      p.innerHTML = `Cookies: ${document.cookie}`;
+      document.body.appendChild(p);
+    }
+  </script>
+</body>
+</html>
