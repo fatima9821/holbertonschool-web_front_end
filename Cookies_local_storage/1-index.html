@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 1 - Cookies with Expiration</title>
+</head>
+<body>
+  <h2>Login</h2>
+  <input type="text" id="firstname" placeholder="Firstname">
+  <input type="text" id="email" placeholder="Email">
+  <button onclick="setCookies()">Log me in</button>
+  <button onclick="showCookies()">Show the cookies</button>
+
+  <script>
+    function setCookies() {
+      const firstname = document.getElementById('firstname').value;
+      const email = document.getElementById('email').value;
+      const d = new Date();
+      d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 1000));
+      let expires = "expires=" + d.toUTCString();
+      document.cookie = `firstname=${firstname}; ${expires}; path=/`;
+      document.cookie = `email=${email}; ${expires}; path=/`;
+    }
+
+    function showCookies() {
+      const p = document.createElement('p');
+      p.innerHTML = `Cookies: ${document.cookie}`;
+      document.body.appendChild(p);
+    }
+  </script>
+</body>
+</html>
