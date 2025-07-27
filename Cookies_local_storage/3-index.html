@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3 - Welcome/Login</title>
+</head>
+<body>
+  <div id="login-form">
+    <h2>Login</h2>
+    <input type="text" id="firstname" placeholder="Firstname">
+    <input type="text" id="email" placeholder="Email">
+    <button onclick="setCookies()">Log me in</button>
+  </div>
+
+  <script>
+    function getCookie(name) {
+      const cookies = document.cookie.split("; ");
+      for (let cookie of cookies) {
+        const [key, value] = cookie.split("=");
+        if (key === name) return value;
+      }
+      return "";
+    }
+
+    function deleteCookiesAndShowForm() {
+      document.cookie = "firstname=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+      document.cookie = "email=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/";
+      showForm();
+    }
+
+    function showForm() {
+      document.body.innerHTML = document.getElementById('login-form').outerHTML;
+    }
+
+    function setCookies() {
+      const firstname = document.getElementById('firstname').value;
+      const email = document.getElementById('email').value;
+      const d = new Date();
+      d.setTime(d.getTime() + (10 * 24 * 60 * 60 * 1000));
+      let expires = "expires=" + d.toUTCString();
+      document.cookie = `firstname=${firstname}; ${expires}; path=/`;
+      document.cookie = `email=${email}; ${expires}; path=/`;
+      showWelcomeMessageOrForm();
+    }
+
+    function showWelcomeMessageOrForm() {
+      const firstname = getCookie("firstname");
+      if (firstname) {
+        document.body.innerHTML = "";
+        const h1 = document.createElement("h1");
+        h1.innerHTML = `Welcome ${firstname}`;
+        const logout = document.createElement("a");
+        logout.href = "#";
+        logout.innerText = " (logout)";
+        logout.style.fontStyle = "italic";
+        logout.style.marginLeft = "10px";
+        logout.onclick = function () {
+          deleteCookiesAndShowForm();
+          return false;
+        };
+        h1.appendChild(logout);
+        document.body.appendChild(h1);
+      } else {
+        showForm();
+      }
+    }
+
+    showWelcomeMessageOrForm();
+  </script>
+</body>
+</html>
